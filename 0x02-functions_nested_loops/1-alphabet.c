@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /* a function that prints all letters of the alphabet*/
 /**
  * main - Entry point
@@ -6,15 +6,13 @@
  * Return: Always 0 (success)
  */
 int main(void)
+
 {
 	char c;
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
+	for (c = 'a'; c <= 'z'; c++)
+	{
+	putchar(c);
+	}
 	putchar('\n');
-	return (0);
 }
