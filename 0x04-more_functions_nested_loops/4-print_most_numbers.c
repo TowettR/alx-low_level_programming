@@ -1,23 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /*
- * print_most_numbers - print the numbers since 0 to 9
- * description: Prints the numbers excluding 2 and 4
- * Return: The numbers 0 to 9
+ * print_most_numbers - print the numbers 01356789
+ * Return: void
  */
+
 void print_most_numbers(void)
 {
-	int x = 0;
+	char x;
 
-	for (; x <= 9; x++)
-	{if (x == 2 || x == 4)
-		{
-			continue
-		}
-		else
-		{
-			_putchar(x + '0');
-		}
+	for (x = '0'; x <= '9'; x++)
+	{
+		if (!(x == '2' || x == '4'))
+			putchar(x);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
