@@ -3,16 +3,30 @@
 /**
  * print_triangle - entry point
  * Description: I prints diagonals
- * @size; size of triangle
+ * @size: size of triangle
  * Return: void
  */
 void print_triangle(int size)
 {
-	int row, hasheds, spaces;
+	int row, hashes, spaces;
+
 	if (size <= 0)
 	{
 		putchar('\n');
 	}
 	else
-		[
-			for 9row = 
+	{
+		for (row = 1; row <= size; row++)
+		{
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				putchar(' ');
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
+				putchar('#');
+			}
+			putchar('\n');
+		}
+	}
+}
